@@ -1,47 +1,56 @@
 List<Map<dynamic, String>> photoGalleryList = [
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "mood",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "Animal",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "asthetic",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "leaves",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "City",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "travel",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "sky",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "road",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    "image": "assets/images/1.jpeg",
+    "image": "assets/images/1.jpg",
     "title": "flowers",
-    "Ditails": "jdfjs;fjsf dfsdjfsdlf dsflsdkfhfgd gfdkl",
+    "Ditails":
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
 ];
