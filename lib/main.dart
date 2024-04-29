@@ -16,16 +16,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xff2CAB00),
+            foregroundColor: Colors.white,
+            backgroundColor: const Color(0xff2CAB00),
           ),
         ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xff2CAB00),
           foregroundColor: Colors.white,
           centerTitle: true,
         ),
       ),
-      home: PhotoGallery(),
+      home: const PhotoGallery(),
     );
   }
 }

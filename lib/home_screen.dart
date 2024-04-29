@@ -57,7 +57,7 @@ class _PhotoGalleryState extends State<PhotoGallery> {
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide.none,
                     ),
-                    child: Container(
+                    child: SizedBox(
                       width: double.infinity,
                       height: 200,
                       // Adjust the height according to your requirement
@@ -76,7 +76,7 @@ class _PhotoGalleryState extends State<PhotoGallery> {
                     left: 16,
                     child: Text(
                       photoGalleryList[index]['title'].toString(),
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

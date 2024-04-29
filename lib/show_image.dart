@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
 import 'image_list.dart';
 
 class ShowImageScreen extends StatelessWidget {
@@ -20,12 +19,13 @@ class ShowImageScreen extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
             onPressed: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const PhotoGallery(),
-                ),
-              );
+              Navigator.pop(context);
+              // Navigator.pushReplacement(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (context) => const PhotoGallery(),
+              //   ),
+              // );
             },
             icon: const Icon(Icons.arrow_back_ios_new_sharp)),
         actions: [
@@ -36,7 +36,7 @@ class ShowImageScreen extends StatelessWidget {
             ),
           ),
         ],
-        title: Text(title ?? ''),
+        title: Text(title ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(15.0),
@@ -48,16 +48,16 @@ class ShowImageScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    height: 325,
+                    height: 250,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(image ?? ''), fit: BoxFit.cover),
+                          image: AssetImage(image), fit: BoxFit.cover),
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.only(top: 10, left: 20),
                     child: Text(
                       title,
                       style: const TextStyle(fontSize: 24),
@@ -84,6 +84,16 @@ class ShowImageScreen extends StatelessWidget {
                       child: const Text(
                         "See More",
                         style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 10, left: 20),
+                    child: Text(
+                      "Suggestions",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xff2CAB00),
                       ),
                     ),
                   )
@@ -122,7 +132,7 @@ class ShowImageScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(30),
                             borderSide: BorderSide.none,
                           ),
-                          child: Container(
+                          child: SizedBox(
                             width: double.infinity,
                             height: 200,
                             // Adjust the height according to your requirement
