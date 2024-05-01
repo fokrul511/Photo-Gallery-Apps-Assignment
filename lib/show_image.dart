@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'image_list.dart';
 
 class ShowImageScreen extends StatelessWidget {
@@ -139,7 +140,6 @@ Widget buildPortait(String image, String title, String ditails) {
                     child: SizedBox(
                       width: double.infinity,
                       height: 200,
-                      // Adjust the height according to your requirement
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(30),
                         child: Image.asset(
@@ -177,19 +177,21 @@ buildlandScope(
   return Row(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      Container(
-        height: MediaQuery.of(context).size.height * 10,
-        width: MediaQuery.of(context).size.width * 0.5,
-        decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
-          borderRadius: BorderRadius.circular(30),
+      Expanded(
+        child: Container(
+          height: MediaQuery.of(context).size.height * 10,
+          width: MediaQuery.of(context).size.width * 0.4,
+          decoration: BoxDecoration(
+            image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
+            borderRadius: BorderRadius.circular(30),
+          ),
         ),
       ),
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            flex: 4,
+            flex: 3,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -215,10 +217,10 @@ buildlandScope(
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 30, top: 10),
+                  padding: const EdgeInsets.only(left: 22, top: 10),
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width * 0.4,
-                    height: 51,
+                    height: MediaQuery.of(context).size.width * 0.06,
                     child: ElevatedButton(
                       onPressed: () {},
                       child: const Text(
